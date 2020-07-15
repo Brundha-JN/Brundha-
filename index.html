@@ -1,0 +1,66 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>JS Day-1 </title>
+</head>
+<body>
+    <h2>Day-1 First assignment </h2>
+    <h3> Exploring Console Function</h3>
+    <script>
+        console.log("Simple ");
+
+        console.clear(); //clears the console 
+
+        console.info("Day 1 Assignment - 1");
+        
+        console.log("Hi I am Brundha ");
+
+        console.error("JS Error"); 
+
+        console.warn("Warning"); 
+
+        console.table({a:1,b:2});
+
+        for(let i=0;i<5;i++)
+        { 
+            console.count(i); 
+        }
+
+        console.time('abc'); 
+        let fun1 =  function(){ 
+            console.log('fun1 is running'); 
+        } 
+        let fun2 = function(){ 
+            console.log('fun2 is running..'); 
+        } 
+        
+        fun1(); 
+        console.timeLog('abc');
+        fun2();    
+        console.timeEnd('abc');
+        
+        
+        console.group("abcc");
+            console.log("a");
+            console.log("b");
+        console.groupCollapsed("cdcdcdcd");
+            console.log("c");
+            console.log("d");
+        console.groupEnd("abcc");
+        
+        console.assert(false, 'the word is %s', 'foo');
+
+        function a(){
+            console.trace();
+        }
+        a();
+
+        
+ 
+        
+    </script>
+    
+
+    
+</body>
+</html>
